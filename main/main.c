@@ -15,4 +15,9 @@
 void app_main(void)
 {
     ESP_LOGI("main", "Hello world!");
+    while (1)
+    {
+        printf("hello world\r\n");
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // 1 second delay
+    }
 }
